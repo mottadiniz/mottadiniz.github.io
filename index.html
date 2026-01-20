@@ -3,82 +3,2159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Digicon - Consultoria em LGPD</title>
-    <style>
-        header {
-            background: white;
-            color: white;
-            text-align: center;
-            padding: 0; /* Adjust padding for header content */
-            margin: 0 -2rem; /* Compensate for the body padding on the header */
-        }
-        header img {
-            max-width: 30%; /* Resize the image to 50% of the header's width */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Ensures the image is treated as a block element for centering */
-            margin: 0 auto; /* Center the image horizontally */
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0 2rem; /* Add padding to left and right of the entire page */
-            background-color: white;
-        }
-        main {
-            padding: 2rem 0; /* No horizontal padding since it's now on body */
-            max-width: 800px;
-            margin: auto;
-            background: white;
+    <meta name="description" content="Consultoria LGPD em Belo Horizonte para PMEs e Startups. Adequação à Lei Geral de Proteção de Dados, DPO as a Service, treinamentos e diagnóstico gratuito. Atendimento em todo Brasil.">
+    <meta name="keywords" content="LGPD, consultoria LGPD, adequação LGPD, DPO as a Service, proteção de dados, Lei Geral de Proteção de Dados, compliance LGPD, ANPD, consultoria LGPD Belo Horizonte, LGPD Minas Gerais">
+    <meta name="author" content="Motta Diniz Digicon - MDD">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mddigicon.com.br/">
+    <meta name="geo.region" content="BR-MG">
+    <meta name="geo.placename" content="Belo Horizonte">
 
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="MDD - Consultoria LGPD em Belo Horizonte | PMEs e Startups">
+    <meta property="og:description" content="Proteja sua empresa e conquiste a confiança dos seus clientes com adequação completa à LGPD. Diagnóstico gratuito e atendimento personalizado.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mddigicon.com.br/">
+    <meta property="og:image" content="https://mddigicon.com.br/logo-mdd-pequeno.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Motta Diniz Digicon">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MDD - Consultoria LGPD em Belo Horizonte">
+    <meta name="twitter:description" content="Consultoria especializada em LGPD para PMEs e Startups. Adequação, DPO as a Service e treinamentos.">
+    <meta name="twitter:image" content="https://mddigicon.com.br/logo-mdd-pequeno.png">
+
+    <title>Consultoria LGPD Belo Horizonte | MDD - Adequação para PMEs e Startups</title>
+
+    <!-- Schema.org Structured Data for SEO & GEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Motta Diniz Digicon - MDD",
+        "alternateName": "MDD Consultoria LGPD",
+        "description": "Consultoria especializada em LGPD para PMEs e Startups em Belo Horizonte e todo Brasil",
+        "url": "https://mddigicon.com.br/",
+        "logo": "https://mddigicon.com.br/logo-mdd-pequeno.png",
+        "image": "https://mddigicon.com.br/logo-mdd-pequeno.png",
+        "email": "contato@mddigicon.com.br",
+        "telephone": "+55-31-99626-3240",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Belo Horizonte",
+            "addressRegion": "MG",
+            "addressCountry": "BR"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+        },
+        "serviceType": ["Consultoria LGPD", "DPO as a Service", "Adequação LGPD", "Treinamento LGPD", "Diagnóstico LGPD"],
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1"
+        },
+        "sameAs": []
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Motta Diniz Digicon",
+        "url": "https://mddigicon.com.br/",
+        "logo": "https://mddigicon.com.br/logo-mdd-pequeno.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-31-99626-3240",
+            "contactType": "customer service",
+            "areaServed": "BR",
+            "availableLanguage": "Portuguese"
         }
-        h1, h2 {
-            color: #35424a;
+    }
+    </script>
+
+    <!-- FAQ Schema for SEO optimization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "O que é a LGPD e por que minha empresa precisa se adequar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A Lei Geral de Proteção de Dados (Lei 13.709/2018) regulamenta o tratamento de dados pessoais no Brasil. Todas as empresas que coletam ou processam dados de pessoas físicas devem se adequar, sob pena de multas de até 2% do faturamento, limitadas a R$ 50 milhões por infração."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "O que é DPO as a Service?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DPO as a Service é a terceirização do Encarregado de Proteção de Dados (Data Protection Officer). Sua empresa conta com um profissional especializado sem os custos de contratação CLT, ideal para PMEs e startups."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quanto tempo leva para adequar uma empresa à LGPD?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "O prazo varia conforme a complexidade da operação. PMEs podem se adequar em 3 a 6 meses. Empresas maiores ou com operações de dados mais complexas podem levar de 6 a 12 meses."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Minha empresa é pequena, preciso me adequar à LGPD?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim, a LGPD se aplica a todas as empresas que tratam dados pessoais, independentemente do porte. Porém, a ANPD publicou regulamentação específica para pequenas empresas e startups, com procedimentos simplificados."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- WebSite Schema for Search Box -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Motta Diniz Digicon",
+        "url": "https://mddigicon.com.br/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://mddigicon.com.br/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
         }
-        ul {
-            list-style-type: none;
+    }
+    </script>
+
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --primary-light: #3b82f6;
+            --secondary: #0f172a;
+            --accent: #06b6d4;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        /* ===== Reset & Base ===== */
+        *, *::before, *::after {
+            margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        li {
-            margin-bottom: 0.5rem;
+
+        html {
+            scroll-behavior: smooth;
         }
-        footer {
+
+        body {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--gray-700);
+            background: var(--white);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ===== Typography ===== */
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--gray-900);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* ===== Layout ===== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        /* ===== Buttons ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .nav-links .btn-primary {
+            color: var(--white) !important;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-accent {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        .btn-accent:hover {
+            background: #0891b2;
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover {
+            background: #128c7e;
+        }
+
+        /* ===== Header & Navigation ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--gray-600);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--gray-700);
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            padding: 8rem 0 5rem;
+            background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary-light);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .stat {
             text-align: center;
-            padding: 0; /* No horizontal padding since it's now on body */
-            background: #35424a;
-            color: white;
-            margin: 0 -2rem; /* Compensate for the body padding on the footer */
         }
-        footer p {
-            margin: 0; /* Remove any default margin around the paragraph */
-        }        
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-image {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 1.5rem;
+            padding: 3rem;
+            color: var(--white);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .shield-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .hero-feature svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent);
+        }
+
+        /* ===== Services Section ===== */
+        .services {
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-header p {
+            color: var(--gray-600);
+            font-size: 1.125rem;
+        }
+
+        .section-tag {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+        }
+
+        .service-card h3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card p {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        /* ===== Quiz Section ===== */
+        .quiz-section {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: var(--white);
+        }
+
+        .quiz-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .quiz-info h2 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .quiz-info p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .quiz-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .quiz-benefit {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .quiz-benefit-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .quiz-card {
+            background: var(--white);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            color: var(--gray-700);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .quiz-progress {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .progress-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .progress-step::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            right: -50%;
+            width: 100%;
+            height: 2px;
+            background: var(--gray-200);
+        }
+
+        .progress-step:last-child::after {
+            display: none;
+        }
+
+        .progress-step.active::after {
+            background: var(--primary);
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: var(--gray-200);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .progress-step.active .step-number,
+        .progress-step.completed .step-number {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .step-label {
+            font-size: 0.75rem;
+            color: var(--gray-500);
+        }
+
+        .quiz-question {
+            margin-bottom: 2rem;
+        }
+
+        .quiz-question h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .quiz-option {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quiz-option:hover {
+            border-color: var(--primary-light);
+            background: var(--gray-50);
+        }
+
+        .quiz-option.selected {
+            border-color: var(--primary);
+            background: rgba(30, 64, 175, 0.05);
+        }
+
+        .quiz-option input {
+            display: none;
+        }
+
+        .quiz-option-radio {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--gray-300);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .quiz-option.selected .quiz-option-radio {
+            border-color: var(--primary);
+            background: var(--primary);
+        }
+
+        .quiz-option.selected .quiz-option-radio::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: var(--white);
+            border-radius: 50%;
+        }
+
+        .quiz-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .quiz-result {
+            display: none;
+            text-align: center;
+        }
+
+        .quiz-result.show {
+            display: block;
+        }
+
+        .result-score {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .result-level {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .result-description {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+        }
+
+        /* ===== FAQ Section ===== */
+        .faq {
+            background: var(--gray-50);
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--gray-800);
+        }
+
+        .faq-question:hover {
+            color: var(--primary);
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--gray-600);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        /* ===== Blog Section ===== */
+        .blog {
+            background: var(--white);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .blog-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 3rem;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-tag {
+            background: var(--primary-light);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .blog-card h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-card h3:hover {
+            color: var(--primary);
+        }
+
+        .blog-card p {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-link {
+            color: var(--primary);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .blog-link:hover {
+            gap: 0.75rem;
+        }
+
+        /* ===== About Section ===== */
+        .about {
+            background: var(--gray-50);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .about-feature {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .about-feature-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .about-feature h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .about-feature p {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            margin: 0;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 1.5rem;
+            padding: 3rem;
+            color: var(--white);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-avatar {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .team-member h4 {
+            color: var(--white);
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .team-member p {
+            font-size: 0.875rem;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        /* ===== Contact Section ===== */
+        .contact {
+            background: var(--white);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gray-100);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .contact-method h4 {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-method p {
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .contact-form {
+            background: var(--gray-50);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--gray-700);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--gray-900);
+            color: var(--gray-400);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            color: var(--white);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-800);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: var(--gray-800);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* ===== WhatsApp Float Button ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            box-shadow: var(--shadow-lg);
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 999;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 70px;
+            background: var(--white);
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-lg);
+            font-size: 0.875rem;
+            color: var(--gray-700);
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ===== Mobile Responsive ===== */
+        @media (max-width: 1024px) {
+            .hero-content,
+            .quiz-container,
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1.5rem;
+                box-shadow: var(--shadow-lg);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero {
+                padding: 7rem 0 4rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== Animations ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Hidden class for quiz */
+        .hidden {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-		<img src="logo-mdd-pequeno.png" alt="MD Digicon">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="logo-mdd-pequeno.png" alt="MDD - Motta Diniz Digicon - Consultoria LGPD Belo Horizonte" style="height: 45px;">
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#diagnostico">Diagnóstico</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato" class="btn btn-primary">Fale Conosco</a></li>
+                </ul>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>MD Digicon - Consultoria em LGPD</h1>
-        <h2>Sobre Nossos Serviços</h2>
-        <p>Oferecemos consultoria especializada na Lei Geral de Proteção de Dados (LGPD) para empresas de todos os tamanhos. Nossa abordagem é garantir que sua organização esteja em conformidade com as normativas de proteção de dados, proporcionando segurança e confiança aos seus clientes.</p>
 
-        <h2>Como Podemos Ajudar?</h2>
-        <ul>
-            <li><strong>Avaliação de Conformidade:</strong> Análise detalhada da sua atual política de dados e recomendações para alinhamento com a LGPD.</li>
-            <li><strong>Treinamento:</strong> Workshops e treinamentos para sua equipe sobre as melhores práticas de proteção de dados.</li>
-            <li><strong>Implementação de Políticas:</strong> Ajuda na criação e implementação de políticas de privacidade e proteção de dados.</li>
-            <li><strong>Gestão de Incidentes:</strong> Suporte no manejo e resposta a incidentes de segurança de dados.</li>
-            <li><strong>Monitoramento Contínuo:</strong> Auditorias periódicas para garantir a manutenção da conformidade.</li>
-        </ul>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        🔒 Especialistas em LGPD
+                    </div>
+                    <h1>Proteja sua empresa e <span>conquiste a confiança</span> dos seus clientes</h1>
+                    <p class="hero-description">
+                        Consultoria jurídica especializada em Lei Geral de Proteção de Dados para PMEs e Startups.
+                        Adequação completa, DPO as a Service e treinamentos personalizados.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#diagnostico" class="btn btn-primary">
+                            📋 Fazer Diagnóstico Gratuito
+                        </a>
+                        <a href="#contato" class="btn btn-secondary">
+                            Falar com Especialista
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <div class="shield-icon">🛡️</div>
+                        <div class="hero-features">
+                            <div class="hero-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                                <span>Adequação completa à LGPD</span>
+                            </div>
+                            <div class="hero-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                                <span>DPO as a Service</span>
+                            </div>
+                            <div class="hero-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                                <span>Treinamentos personalizados</span>
+                            </div>
+                            <div class="hero-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                                <span>Suporte contínuo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h2>Entre em Contato</h2>
-        <p>Para mais informações ou para agendar uma consulta, entre em contato conosco:</p>
-        <p>Email: <a href="mailto:contato@mddigicon.com.br">contato@mddigicon.com.br</a></p>
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nossos Serviços</span>
+                <h2>Soluções completas em LGPD para sua empresa</h2>
+                <p>Da avaliação inicial à implementação completa, oferecemos tudo que sua empresa precisa para estar em conformidade com a Lei Geral de Proteção de Dados.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Diagnóstico LGPD</h3>
+                    <p>Avaliação completa do nível de conformidade da sua empresa com a LGPD, identificando gaps e riscos.</p>
+                    <ul class="service-features">
+                        <li>Mapeamento de dados pessoais</li>
+                        <li>Análise de processos</li>
+                        <li>Relatório de vulnerabilidades</li>
+                        <li>Plano de ação priorizado</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Adequação Completa</h3>
+                    <p>Implementação de todas as medidas necessárias para conformidade total com a LGPD.</p>
+                    <ul class="service-features">
+                        <li>Políticas de privacidade</li>
+                        <li>Termos de uso</li>
+                        <li>Contratos com terceiros</li>
+                        <li>Procedimentos internos</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👤</div>
+                    <h3>DPO as a Service</h3>
+                    <p>Encarregado de Proteção de Dados terceirizado, com toda expertise sem os custos de contratação.</p>
+                    <ul class="service-features">
+                        <li>Comunicação com ANPD</li>
+                        <li>Atendimento a titulares</li>
+                        <li>Gestão de incidentes</li>
+                        <li>Relatórios periódicos</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Treinamentos</h3>
+                    <p>Capacitação de equipes para criar uma cultura de proteção de dados na organização.</p>
+                    <ul class="service-features">
+                        <li>Workshops presenciais/online</li>
+                        <li>Material didático</li>
+                        <li>Certificados</li>
+                        <li>Simulações práticas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- Quiz Section -->
+    <section class="quiz-section" id="diagnostico">
+        <div class="container">
+            <div class="quiz-container">
+                <div class="quiz-info">
+                    <span class="section-tag" style="color: var(--accent);">Diagnóstico Gratuito</span>
+                    <h2>Descubra o nível de maturidade LGPD da sua empresa</h2>
+                    <p>Responda 5 perguntas rápidas e receba uma avaliação preliminar da conformidade da sua empresa com a Lei Geral de Proteção de Dados.</p>
+                    <div class="quiz-benefits">
+                        <div class="quiz-benefit">
+                            <div class="quiz-benefit-icon">⏱️</div>
+                            <div>
+                                <strong>Rápido</strong>
+                                <p style="margin:0;opacity:0.8;font-size:0.9rem">Apenas 2 minutos</p>
+                            </div>
+                        </div>
+                        <div class="quiz-benefit">
+                            <div class="quiz-benefit-icon">📧</div>
+                            <div>
+                                <strong>Relatório por e-mail</strong>
+                                <p style="margin:0;opacity:0.8;font-size:0.9rem">Receba detalhamento completo</p>
+                            </div>
+                        </div>
+                        <div class="quiz-benefit">
+                            <div class="quiz-benefit-icon">💡</div>
+                            <div>
+                                <strong>Recomendações</strong>
+                                <p style="margin:0;opacity:0.8;font-size:0.9rem">Próximos passos sugeridos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz-card">
+                    <div class="quiz-progress">
+                        <div class="progress-step active" data-step="1">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Dados</div>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Políticas</div>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Segurança</div>
+                        </div>
+                        <div class="progress-step" data-step="4">
+                            <div class="step-number">4</div>
+                            <div class="step-label">Processos</div>
+                        </div>
+                        <div class="progress-step" data-step="5">
+                            <div class="step-number">5</div>
+                            <div class="step-label">Resultado</div>
+                        </div>
+                    </div>
+
+                    <!-- Question 1 -->
+                    <div class="quiz-question" data-question="1">
+                        <h3>Sua empresa possui um mapeamento de todos os dados pessoais que coleta e processa?</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="3">
+                                <span class="quiz-option-radio"></span>
+                                <span>Sim, temos um inventário completo e atualizado</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="2">
+                                <span class="quiz-option-radio"></span>
+                                <span>Parcialmente, conhecemos alguns dados mas não todos</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="1">
+                                <span class="quiz-option-radio"></span>
+                                <span>Não, não temos esse mapeamento</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="quiz-question hidden" data-question="2">
+                        <h3>Sua empresa possui Política de Privacidade publicada e acessível aos titulares de dados?</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="3">
+                                <span class="quiz-option-radio"></span>
+                                <span>Sim, está publicada e atualizada conforme a LGPD</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="2">
+                                <span class="quiz-option-radio"></span>
+                                <span>Temos, mas não foi revisada para a LGPD</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="1">
+                                <span class="quiz-option-radio"></span>
+                                <span>Não possuímos política de privacidade</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="quiz-question hidden" data-question="3">
+                        <h3>Existem medidas de segurança técnicas para proteger os dados pessoais (criptografia, controle de acesso, etc.)?</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="3">
+                                <span class="quiz-option-radio"></span>
+                                <span>Sim, temos medidas robustas implementadas</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="2">
+                                <span class="quiz-option-radio"></span>
+                                <span>Temos algumas medidas básicas</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="1">
+                                <span class="quiz-option-radio"></span>
+                                <span>Não temos medidas específicas</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="quiz-question hidden" data-question="4">
+                        <h3>Sua empresa possui um Encarregado de Proteção de Dados (DPO) designado?</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="3">
+                                <span class="quiz-option-radio"></span>
+                                <span>Sim, temos DPO interno ou terceirizado</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="2">
+                                <span class="quiz-option-radio"></span>
+                                <span>Estamos em processo de designação</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="1">
+                                <span class="quiz-option-radio"></span>
+                                <span>Não temos DPO designado</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="quiz-question hidden" data-question="5">
+                        <h3>Os colaboradores receberam treinamento sobre LGPD e proteção de dados?</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="3">
+                                <span class="quiz-option-radio"></span>
+                                <span>Sim, todos foram treinados</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="2">
+                                <span class="quiz-option-radio"></span>
+                                <span>Apenas algumas áreas</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="1">
+                                <span class="quiz-option-radio"></span>
+                                <span>Não houve treinamento</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Result -->
+                    <div class="quiz-result" id="quizResult">
+                        <div class="result-score" id="resultScore">0%</div>
+                        <div class="result-level" id="resultLevel">Nível de Maturidade</div>
+                        <p class="result-description" id="resultDescription">
+                            Descrição do resultado aparecerá aqui.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <input type="email" id="resultEmail" placeholder="Seu e-mail para receber o relatório completo" style="width: 100%; padding: 0.875rem 1rem; border: 2px solid var(--gray-200); border-radius: 0.5rem; font-size: 1rem; margin-bottom: 1rem;">
+                            <button class="btn btn-primary" style="width: 100%;" onclick="sendReport()">
+                                📧 Receber Relatório Completo
+                            </button>
+                        </div>
+                        <button class="btn btn-secondary" onclick="restartQuiz()">Refazer Diagnóstico</button>
+                    </div>
+
+                    <div class="quiz-nav" id="quizNav">
+                        <button class="btn btn-secondary" id="prevBtn" onclick="prevQuestion()" disabled>← Anterior</button>
+                        <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Próxima →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Perguntas Frequentes</span>
+                <h2>Tire suas dúvidas sobre LGPD</h2>
+                <p>Respostas para as principais questões sobre a Lei Geral de Proteção de Dados e adequação empresarial.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>O que é a LGPD e por que minha empresa precisa se adequar?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            A Lei Geral de Proteção de Dados (Lei 13.709/2018) regulamenta o tratamento de dados pessoais no Brasil. Todas as empresas que coletam ou processam dados de pessoas físicas devem se adequar, sob pena de multas de até 2% do faturamento, limitadas a R$ 50 milhões por infração. Além das sanções financeiras, há riscos reputacionais significativos e possibilidade de proibição do tratamento de dados.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>O que é DPO as a Service e quais as vantagens?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            DPO as a Service é a terceirização do Encarregado de Proteção de Dados (Data Protection Officer). Sua empresa conta com um profissional especializado sem os custos de contratação CLT. As vantagens incluem: expertise especializada, custo reduzido, atualização constante sobre regulamentações, e dedicação profissional à função exigida pela LGPD.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quanto tempo leva para adequar uma empresa à LGPD?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            O prazo varia conforme a complexidade da operação. PMEs podem se adequar em 3 a 6 meses. Empresas maiores ou com operações de dados mais complexas podem levar de 6 a 12 meses. O importante é iniciar o processo o quanto antes, já que a LGPD está em vigor e a ANPD está aplicando sanções.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quais são as multas previstas pela LGPD?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            As sanções administrativas incluem: advertência, multa simples de até 2% do faturamento (limitada a R$ 50 milhões por infração), multa diária, publicização da infração, bloqueio dos dados pessoais, eliminação dos dados pessoais, suspensão parcial do funcionamento do banco de dados, e proibição parcial ou total do exercício de atividades relacionadas a tratamento de dados.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Minha empresa é pequena, preciso me adequar à LGPD?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Sim, a LGPD se aplica a todas as empresas que tratam dados pessoais, independentemente do porte. Porém, a ANPD publicou regulamentação específica para pequenas empresas e startups, com procedimentos simplificados. Nossa consultoria é especializada em adequar PMEs de forma eficiente e com custo acessível.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Como a LGPD protege os direitos dos titulares de dados?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            A LGPD garante aos titulares diversos direitos, incluindo: confirmação da existência de tratamento, acesso aos dados, correção de dados incompletos ou desatualizados, anonimização, bloqueio ou eliminação de dados desnecessários, portabilidade dos dados, eliminação dos dados tratados com consentimento, informação sobre compartilhamento, e revogação do consentimento.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Qual a diferença entre dados pessoais e dados sensíveis?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Dados pessoais são informações que identificam ou tornam identificável uma pessoa natural (nome, CPF, e-mail, etc.). Dados sensíveis são uma categoria especial que inclui origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato, dados genéticos, biométricos, sobre saúde ou vida sexual. Dados sensíveis possuem proteção reforçada pela LGPD.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>O que fazer em caso de vazamento de dados?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Em caso de incidente de segurança, a empresa deve comunicar imediatamente a ANPD e os titulares afetados, detalhando a natureza do incidente, dados envolvidos, medidas técnicas adotadas, riscos aos titulares e ações para reverter ou mitigar os efeitos. O DPO é fundamental para gerenciar esse processo de forma adequada e tempestiva.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Blog & Recursos</span>
+                <h2>Conteúdo sobre LGPD e Proteção de Dados</h2>
+                <p>Artigos, guias e novidades para manter sua empresa atualizada sobre proteção de dados.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">📋</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Guia</span>
+                            <span>15 Jan 2026</span>
+                        </div>
+                        <h3><a href="#">Checklist: 10 passos para adequar sua PME à LGPD</a></h3>
+                        <p>Um guia prático com os passos essenciais para iniciar a jornada de conformidade da sua empresa.</p>
+                        <a href="#" class="blog-link">Ler artigo →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">⚠️</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-tag">ANPD</span>
+                            <span>10 Jan 2026</span>
+                        </div>
+                        <h3><a href="#">ANPD aplica primeira multa milionária: o que sua empresa pode aprender</a></h3>
+                        <p>Análise do caso e lições importantes para evitar sanções semelhantes na sua organização.</p>
+                        <a href="#" class="blog-link">Ler artigo →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">🔐</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Segurança</span>
+                            <span>05 Jan 2026</span>
+                        </div>
+                        <h3><a href="#">Medidas de segurança da informação exigidas pela LGPD</a></h3>
+                        <p>Entenda quais medidas técnicas e administrativas são necessárias para proteger dados pessoais.</p>
+                        <a href="#" class="blog-link">Ler artigo →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">Sobre a MDD</span>
+                    <h2>Expertise jurídica aliada à tecnologia</h2>
+                    <p>A Motta Diniz Digicon nasceu da união entre conhecimento jurídico sólido e compreensão profunda do ambiente digital. Nossa missão é democratizar o acesso à conformidade com a LGPD, especialmente para PMEs e startups que não dispõem de grandes orçamentos.</p>
+                    <p>Trazemos expertise especializada em direito digital e proteção de dados para ajudar sua empresa a se adequar à legislação de forma eficiente e sustentável.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🎯</div>
+                            <div>
+                                <h4>Foco em Resultados</h4>
+                                <p>Metodologia prática e objetiva</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">💰</div>
+                            <div>
+                                <h4>Custo Acessível</h4>
+                                <p>Soluções para todos os portes</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🤝</div>
+                            <div>
+                                <h4>Parceria Contínua</h4>
+                                <p>Suporte além da adequação</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">📚</div>
+                            <div>
+                                <h4>Conhecimento</h4>
+                                <p>Atualização constante</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="shield-icon">🛡️</div>
+                    <h3 style="color: white; text-align: center; margin-bottom: 1.5rem;">Compromisso com a Excelência</h3>
+                    <p style="text-align: center; opacity: 0.9;">Dedicação total à proteção de dados da sua empresa, com soluções personalizadas e atendimento próximo às suas necessidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <span class="section-tag">Contato</span>
+                    <h2>Vamos conversar sobre a proteção de dados da sua empresa</h2>
+                    <p>Entre em contato para uma avaliação inicial gratuita. Nossa equipe está pronta para entender suas necessidades e propor a melhor solução.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:contato@mddigicon.com.br" style="color: inherit; text-decoration: none;">contato@mddigicon.com.br</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>(31) 99626-3240</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Belo Horizonte - MG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome completo</label>
+                                <input type="text" id="name" name="name" required placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Empresa</label>
+                                <input type="text" id="company" name="company" placeholder="Nome da empresa">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(31) 99999-9999">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Serviço de interesse</label>
+                            <select id="service" name="service">
+                                <option value="">Selecione um serviço</option>
+                                <option value="diagnostico">Diagnóstico LGPD</option>
+                                <option value="adequacao">Adequação Completa</option>
+                                <option value="dpo">DPO as a Service</option>
+                                <option value="treinamento">Treinamentos</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Conte-nos sobre suas necessidades..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 MD Digicon. Todos os direitos reservados.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo" style="justify-content: flex-start;">
+                        <span>Motta Diniz Digicon</span>
+                    </a>
+                    <p>Consultoria jurídica especializada em LGPD para PMEs e Startups. Protegemos sua empresa e a confiança dos seus clientes.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Diagnóstico LGPD</a></li>
+                        <li><a href="#servicos">Adequação Completa</a></li>
+                        <li><a href="#servicos">DPO as a Service</a></li>
+                        <li><a href="#servicos">Treinamentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Motta Diniz Digicon - MDD. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5531996263240?text=Olá! Gostaria de saber mais sobre os serviços de consultoria LGPD." class="whatsapp-float" target="_blank" rel="noopener">
+        💬
+        <span class="whatsapp-tooltip">Fale conosco pelo WhatsApp</span>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Quiz Logic
+        let currentQuestion = 1;
+        const totalQuestions = 5;
+        let answers = {};
+
+        function updateProgress() {
+            document.querySelectorAll('.progress-step').forEach((step, index) => {
+                const stepNum = index + 1;
+                step.classList.remove('active', 'completed');
+                if (stepNum < currentQuestion) {
+                    step.classList.add('completed');
+                } else if (stepNum === currentQuestion) {
+                    step.classList.add('active');
+                }
+            });
+        }
+
+        function showQuestion(num) {
+            document.querySelectorAll('.quiz-question').forEach(q => {
+                q.classList.add('hidden');
+            });
+            const question = document.querySelector(`[data-question="${num}"]`);
+            if (question) {
+                question.classList.remove('hidden');
+            }
+        }
+
+        function nextQuestion() {
+            const selected = document.querySelector(`input[name="q${currentQuestion}"]:checked`);
+            if (!selected) {
+                alert('Por favor, selecione uma opção antes de continuar.');
+                return;
+            }
+
+            answers[`q${currentQuestion}`] = parseInt(selected.value);
+
+            if (currentQuestion < totalQuestions) {
+                currentQuestion++;
+                showQuestion(currentQuestion);
+                updateProgress();
+                document.getElementById('prevBtn').disabled = false;
+
+                if (currentQuestion === totalQuestions) {
+                    document.getElementById('nextBtn').textContent = 'Ver Resultado';
+                }
+            } else {
+                showResult();
+            }
+        }
+
+        function prevQuestion() {
+            if (currentQuestion > 1) {
+                currentQuestion--;
+                showQuestion(currentQuestion);
+                updateProgress();
+                document.getElementById('nextBtn').textContent = 'Próxima →';
+
+                if (currentQuestion === 1) {
+                    document.getElementById('prevBtn').disabled = true;
+                }
+            }
+        }
+
+        function showResult() {
+            // Calculate score
+            let totalScore = 0;
+            Object.values(answers).forEach(val => {
+                totalScore += val;
+            });
+
+            const maxScore = totalQuestions * 3;
+            const percentage = Math.round((totalScore / maxScore) * 100);
+
+            // Determine level
+            let level, description;
+            if (percentage >= 80) {
+                level = "🟢 Alto - Conformidade Avançada";
+                description = "Parabéns! Sua empresa demonstra um bom nível de maturidade em LGPD. Recomendamos uma revisão periódica para manter a conformidade e identificar oportunidades de melhoria contínua.";
+            } else if (percentage >= 50) {
+                level = "🟡 Médio - Em Desenvolvimento";
+                description = "Sua empresa já iniciou a jornada de adequação, mas ainda há pontos importantes a serem trabalhados. Recomendamos uma consultoria para acelerar o processo e evitar riscos.";
+            } else {
+                level = "🔴 Inicial - Ação Necessária";
+                description = "Sua empresa precisa iniciar urgentemente o processo de adequação à LGPD. O risco de sanções e danos reputacionais é significativo. Entre em contato para um plano de ação imediato.";
+            }
+
+            // Hide quiz elements
+            document.querySelectorAll('.quiz-question').forEach(q => q.classList.add('hidden'));
+            document.getElementById('quizNav').classList.add('hidden');
+
+            // Show result
+            document.getElementById('resultScore').textContent = percentage + '%';
+            document.getElementById('resultLevel').textContent = level;
+            document.getElementById('resultDescription').textContent = description;
+            document.getElementById('quizResult').classList.add('show');
+
+            // Update progress
+            document.querySelectorAll('.progress-step').forEach(step => {
+                step.classList.add('completed');
+            });
+        }
+
+        function restartQuiz() {
+            currentQuestion = 1;
+            answers = {};
+
+            // Reset radio buttons
+            document.querySelectorAll('.quiz-option input').forEach(input => {
+                input.checked = false;
+            });
+            document.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+
+            // Show first question
+            showQuestion(1);
+            updateProgress();
+
+            // Reset navigation
+            document.getElementById('quizNav').classList.remove('hidden');
+            document.getElementById('quizResult').classList.remove('show');
+            document.getElementById('prevBtn').disabled = true;
+            document.getElementById('nextBtn').textContent = 'Próxima →';
+        }
+
+        function sendReport() {
+            const email = document.getElementById('resultEmail').value;
+            if (!email) {
+                alert('Por favor, insira seu e-mail para receber o relatório.');
+                return;
+            }
+            alert('Obrigado! Em breve você receberá o relatório completo em ' + email);
+        }
+
+        // Quiz option selection visual feedback
+        document.querySelectorAll('.quiz-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const questionContainer = this.closest('.quiz-question');
+                questionContainer.querySelectorAll('.quiz-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                this.classList.add('selected');
+                this.querySelector('input').checked = true;
+            });
+        });
+
+        // Contact Form Handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            event.target.reset();
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // Header shadow on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
+            } else {
+                header.style.boxShadow = '0 1px 3px 0 rgb(0 0 0 / 0.1)';
+            }
+        });
+    </script>
 </body>
 </html>
