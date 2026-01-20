@@ -1,0 +1,10 @@
+# robots.txt para mddigicon.com.br
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://mddigicon.com.br/sitemap.xml
+
+# Bloquear arquivos desnecessários
+Disallow: /teste.html
+Disallow: /site.html
