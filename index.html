@@ -2207,11 +2207,19 @@
                     throw new Error('Falha no envio');
                 }
 
+                const result = await response.json();
+                const submissionSucceeded = result.success === true || result.success === 'true';
+
+                if (!submissionSucceeded) {
+                    throw new Error(result.message || 'Falha no envio');
+                }
+
                 status.textContent = 'Mensagem enviada com sucesso. Vamos entrar em contato em breve.';
                 status.className = 'form-status show success';
                 form.reset();
             } catch (error) {
-                status.textContent = 'Nao foi possivel enviar agora. Tente novamente em instantes ou envie um email para contato@mddigicon.com.br.';
+                const message = error && error.message ? error.message : 'Nao foi possivel enviar agora.';
+                status.textContent = `${message} Se preferir, envie um email para contato@mddigicon.com.br.`;
                 status.className = 'form-status show error';
             } finally {
                 submitButton.disabled = false;
